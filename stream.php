@@ -36,7 +36,7 @@
                         $tag_close = "a";
                     } else {
                         $tag_open  = "span class='stream-grid__tile stream-grid__tile--" . $tile_class . "'";
-                        $tag_close = $tag_open;
+                        $tag_close = "span";
                     }
                     ?>
                     <li>
