@@ -37,8 +37,12 @@
     <meta name="keywords" content="Grown George, Long Nights, Cold Nights, We Don't Care Productions">
 
     <!-- Required site assets -->
-    <link rel="stylesheet" type="text/css" href="dist/css/style_20201127.css">
-    <script src="dist/js/bundle-main_20201127.js"></script>
+    <?php
+      $style_version = date("Ymd_His", filemtime("dist/css/style.css"));
+      $bundle_version  = date("Ymd_His", filemtime("dist/js/bundle-main.js"));
+    ?>
+    <link rel="stylesheet" type="text/css" href="dist/css/style.css?ver=<?php echo $style_version; ?>">
+    <script src="dist/js/bundle-main.js?ver=<?php echo $bundle_version; ?>"></script>
 
     <!-- Favicon stuff -->
     <link rel="apple-touch-icon" sizes="180x180" href="dist/favicon/apple-touch-icon.png">
