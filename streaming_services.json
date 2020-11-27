@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Spotify",
+        "profileUrl": "https://open.spotify.com/artist/2GibrdFDvQp6k6AtcGx5Kt",
+        "albumUrl": "https://open.spotify.com/album/1y8sgJdZQWHEfuuKgibibV"
+    },
+    {
+        "name": "Apple Music",
+        "profileUrl": "https://music.apple.com/us/artist/grown-george/1245142452",
+        "albumUrl": "https://music.apple.com/us/album/long-nights-cold-nights/1537807490"
+    },
+    {
+        "name": "YouTube",
+        "profileUrl": "https://www.youtube.com/channel/UCpj7LYWgu-L0JvmcjKiRCvQ",
+        "albumUrl": ""
+    },
+    {
+        "name": "Deezer",
+        "profileUrl": "https://www.deezer.com/en/artist/12567522",
+        "albumUrl": ""
+    },
+    {
+        "name": "Google Play Music",
+        "profileUrl": "",
+        "albumUrl": ""
+    },
+    {
+        "name": "Amazon Music",
+        "profileUrl": "https://music.amazon.com/artists/B071WMQ3MB/grown-george",
+        "albumUrl": "https://music.amazon.com/albums/B08NFCJ79P"
+    },
+    {
+        "name": "SoundCloud",
+        "profileUrl": "https://soundcloud.com/larry-pickles",
+        "albumUrl": ""
+    },
+    {
+        "name": "Audiomack",
+        "profileUrl": "https://audiomack.com/grown-george",
+        "albumUrl": ""
+    }
+]
