@@ -30,7 +30,7 @@
                     muted
                     playsinline
                 >
-                    Your web browser is unsupported.
+                    Your web browser doesn't support this video.
                 </video>
 
                 <div class="video-mute">
