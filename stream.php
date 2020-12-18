@@ -19,7 +19,7 @@
         }
     ?>
 
-    <ul class="stream-grid" aria-label="Stream 'The Madness!' now!">
+    <ul class="stream-grid" aria-label="Stream 'Long Nights, Cold Nights' now!">
         <?php
             $file = file_get_contents("streaming_services.json");
 
