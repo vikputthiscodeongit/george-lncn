@@ -7,8 +7,8 @@
 
   $clear = $date_current > $date_clear ? true : false;
   // var_dump($clear);
-  
-  
+
+
   // Define page names
   $page = str_replace(".php", "", basename($_SERVER["PHP_SELF"]));
 
@@ -72,7 +72,7 @@
     <script>
       // Calculate some dates
       const album = {};
-      
+
       album.currentDate = new Date(),
       album.releaseDate = new Date(2020, 10, 27, 0, 0, 0);
 

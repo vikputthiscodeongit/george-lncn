@@ -1,43 +1,43 @@
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .video {
-    &-mute {
-        position: absolute;
-        bottom: rem(12px);
-        right: rem(12px);
-        width: rem(24px);
-        height: rem(24px);
+  &-mute {
+    position: absolute;
+    bottom: rem(12px);
+    right: rem(12px);
+    width: rem(24px);
+    height: rem(24px);
 
-        &:hover {
-            cursor: pointer;
-        }
-
-        .no-js &,
-        .video:not([muted]) + & {
-            display: none;
-        }
+    &:hover {
+      cursor: pointer;
     }
+
+    .no-js &,
+    .video:not([muted]) + & {
+      display: none;
+    }
+  }
 }
 
 .media {
-    width: rem(280px);
+  width: rem(280px);
 
-    @include respond-above(xs, md) {
-        width: rem(320px);
-    }
+  @include respond-above(xs, md) {
+    width: rem(320px);
+  }
 
-    @include respond-above(sm, lg) {
-        width: rem(384px);
-    }
+  @include respond-above(sm, lg) {
+    width: rem(384px);
+  }
 
-    @include respond-above(md, xl) {
-        width: rem(480px);
-    }
+  @include respond-above(md, xl) {
+    width: rem(480px);
+  }
 
-    @include respond-above(xxxl, xxxl) {
-        width: rem(540px);
-    }
+  @include respond-above(xxxl, xxxl) {
+    width: rem(540px);
+  }
 }
