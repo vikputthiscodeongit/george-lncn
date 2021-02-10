@@ -31,7 +31,7 @@
         > video,
         > img {
             width: 100%;
-            
+
             @if $image-size == contain {
                 object-fit: contain;
                 font-family: "object-fit: contain;"; // Add support for object-fit-images polyfill

@@ -1,88 +1,88 @@
 .stream-grid {
-	display: grid;
-	grid-template-rows: repeat(4, 1fr);
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap: rem(24px);
-	padding-left: 0;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: rem(24px);
+  padding-left: 0;
 
-    // 768 x 800
+  // 768 x 800
+  @include respond-above(md, xl) {
+    grid-gap: rem(30px);
+  }
+
+  // 2560 x 1080
+  @include respond-above(xxxl, xxxl) {
+    grid-gap: rem(40px);
+  }
+
+  li {
+    list-style: none;
+  }
+
+  &__tile {
+    display: block;
+    width: rem(64px);
+    height: rem(64px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
     @include respond-above(md, xl) {
-        grid-gap: rem(30px);
+      width: rem(80px);
+      height: rem(80px);
     }
 
-    // 2560 x 1080
     @include respond-above(xxxl, xxxl) {
-        grid-gap: rem(40px);
+      width: rem(100px);
+      height: rem(100px);
     }
 
-	li {
-		list-style: none;
-	}
+    &--spotify {
+      background-image: url("../images/compiled/stream-grid/spotify-color.png");
+    }
 
-	&__tile {
-		display: block;
-        width: rem(64px);
-        height: rem(64px);
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: contain;
+    &--apple-music {
+      background-image: url("../images/compiled/stream-grid/apple-music-color.svg");
+    }
 
-        @include respond-above(md, xl) {
-    		width: rem(80px);
-    		height: rem(80px);
-        }
+    &--tidal {
+      background-image: url("../images/compiled/stream-grid/tidal-white.svg");
+    }
 
-        @include respond-above(xxxl, xxxl) {
-    		width: rem(100px);
-    		height: rem(100px);
-        }
+    &--deezer {
+      background-image: url("../images/compiled/stream-grid/deezer-white.svg");
 
-		&--spotify {
-			background-image: url("../images/compiled/stream-grid/spotify-color.png");
-		}
+      .bg-light & {
+        background-image: url("../images/compiled/stream-grid/deezer-black.svg");
+      }
+    }
 
-		&--apple-music {
-			background-image: url("../images/compiled/stream-grid/apple-music-color.svg");
-		}
+    &--google-play-music {
+      background-image: url("../images/compiled/stream-grid/google-play-music-color.svg");
+    }
 
-		&--tidal {
-			background-image: url("../images/compiled/stream-grid/tidal-white.svg");
-		}
+    &--amazon-music {
+      background-image: url("../images/compiled/stream-grid/amazon-music-color.png");
+    }
 
-		&--deezer {
-			background-image: url("../images/compiled/stream-grid/deezer-white.svg");
+    &--soundcloud {
+      background-image: url("../images/compiled/stream-grid/soundcloud-color.svg");
+    }
 
-			.bg-light & {
-				background-image: url("../images/compiled/stream-grid/deezer-black.svg");
-			}
-		}
+    &--audiomack {
+      background-image: url("../images/compiled/stream-grid/audiomack-white.png");
 
-		&--google-play-music {
-			background-image: url("../images/compiled/stream-grid/google-play-music-color.svg");
-		}
+      .bg-light & {
+        background-image: url("../images/compiled/stream-grid/audiomack-black.png");
+      }
+    }
 
-		&--amazon-music {
-			background-image: url("../images/compiled/stream-grid/amazon-music-color.png");
-		}
+    &--youtube {
+      background-image: url("../images/compiled/stream-grid/youtube-white.png");
 
-		&--soundcloud {
-			background-image: url("../images/compiled/stream-grid/soundcloud-color.svg");
-		}
-
-		&--audiomack {
-			background-image: url("../images/compiled/stream-grid/audiomack-white.png");
-
-			.bg-light & {
-				background-image: url("../images/compiled/stream-grid/audiomack-black.png");
-			}
-		}
-
-		&--youtube {
-			background-image: url("../images/compiled/stream-grid/youtube-white.png");
-
-			.bg-light & {
-				background-image: url("../images/compiled/stream-grid/youtube-black.png");
-			}
-		}
-	}
+      .bg-light & {
+        background-image: url("../images/compiled/stream-grid/youtube-black.png");
+      }
+    }
+  }
 }
